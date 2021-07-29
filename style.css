@@ -82,6 +82,7 @@ h1 {
 
 #btn {
   display: inline-block;
+  background-color: white;
   padding: 0.4em;
   width: 10em;
   border-radius: 7px;
