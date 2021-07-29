@@ -1,5 +1,3 @@
-//Om Namah Shivaya
-
 //Global variables
 const currency1 = document.querySelector("#from");
 const currency2 = document.querySelector("#to");
@@ -48,6 +46,8 @@ function convertCurrency() {
       return data.json();
     })
     .then((response) => {
+      
+      //Iterating over the json data received with the base currency as input
       for (const [key, value] of Object.entries(response)) {
         if (key == baseCurrency) {
           for (const [key1, value1] of Object.entries(value)) {
